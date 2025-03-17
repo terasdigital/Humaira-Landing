@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 10px;
+  background-image: url(img/humairabg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1.fnt-hero {
+  font-size: 9rem;
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+h4.fnt-hero {
+  font-size: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2,
+h3 {
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+p,
+ul,
+a,
+button,
+summary {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+details,
+p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+section.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, rgba(255, 255, 255, 0), #fff);
+  position: fixed;
+  top: 0;
+  right: 2px;
+  left: 2px;
+}
+
+section.sticky div.sisi-kiri {
+  margin-top: 1em;
+}
+
+section.sticky a button {
+  border-radius: 50%;
+  aspect-ratio: 1;
+  margin-top: 2em;
+  padding: 5px;
+  border: none;
+  background-color: #54affd;
+  color: #f2f2f2;
+  box-shadow: 0px 1px 5px 1px #226d18;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+main section.hero {
+  margin-top: 10em;
+  text-align: center;
+  line-height: 1;
+}
+
+main section.about {
+  display: flex;
+  margin-top: 4em;
+  align-items: center;
+}
+
+main section.txt-kiri {
+  flex-basis: 50%;
+}
+
+main section.gbr-kanan {
+  flex-basis: 50%;
+}
+
+section.gbr-kanan img {
+  width: 50vw;
+  border-radius: 20px;
+  margin-left: 10px;
+  box-shadow: 4px 3px 10px 5px #55b5fe;
+}
+
+section.info-daftar {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  text-align: center;
+}
+
+section.info-daftar h2 {
+  text-align: center;
+}
+
+section.info-daftar ul {
+  list-style-type: none;
+  margin: 10px;
+}
+
+section.info-daftar a {
+  text-align: center;
+}
+
+section.info-daftar a button {
+  background-color: #31bd33;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+}
+
+section.program {
+  margin-top: 1.5em;
+}
+
+section.program p {
+  text-align: center;
+}
+
+section.program div.img-container {
+  width: 80vw;
+  margin: 2em auto;
+  line-height: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+div.img-container img {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 0 1px 10px 2px rgba(217, 158, 48, 0.7);
+}
+
+section.pertanyaan h2 {
+  text-align: center;
+}
+
+section.contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 2em;
+}
+
+section.contactus i {
+  font-size: 1.5em;
+  margin: 5px;
+  color: #54affd;
+}
+
+details p {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  section.sticky a button {
+    font-size: 0.75rem;
+  }
+
+  h1.fnt-hero {
+    font-size: 3.5em;
+  }
+
+  h4.fnt-hero {
+    font-size: 1.5em;
+  }
+
+  div.sisi-kiri img {
+    height: 50px;
+  }
+
+  div.sisi-kanan img {
+    height: 25px;
+  }
+
+  main section.about {
+    display: grid;
+  }
+
+  section.gbr-kanan img {
+    display: grid;
+    width: 90vw;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  details {
+    text-align: center;
+  }
+
+  iframe {
+    width: 90vw;
+  }
+}
