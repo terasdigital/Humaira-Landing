@@ -14,19 +14,40 @@ body {
 }
 
 h1.fnt-hero {
-  font-size: 9rem;
+  font-size: 7rem;
   font-family: "Baloo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 800;
   font-style: normal;
 }
 
-h4.fnt-hero {
-  font-size: 3rem;
+h3.fnt-hero {
+  font-size: 5rem;
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+h4.fnt-hero {
+  font-size: 2rem;
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+h4.fnt-hero u.satu {
+  text-decoration-color: #3aac2b;
+}
+
+h4.fnt-hero u.dua {
+  text-decoration-color: #fcd343;
+}
+
+h4.fnt-hero u.tiga {
+  text-decoration-color: #55b5fe;
 }
 
 h2,
@@ -71,19 +92,12 @@ section.sticky div.sisi-kiri {
   margin-top: 1em;
 }
 
-section.sticky a button {
-  border-radius: 50%;
-  aspect-ratio: 1;
+section.sticky a img {
   margin-top: 2em;
-  padding: 5px;
-  border: none;
-  background-color: #54affd;
-  color: #f2f2f2;
-  box-shadow: 0px 1px 5px 1px #226d18;
-  font-weight: 600;
+  height: 100px;
 }
 
-button:hover {
+a img:hover {
   cursor: pointer;
 }
 
@@ -103,15 +117,21 @@ main section.txt-kiri {
   flex-basis: 50%;
 }
 
+section.txt-kiri p {
+  text-align: justify;
+  padding-right: 10px;
+}
+
 main section.gbr-kanan {
   flex-basis: 50%;
+  text-align: center;
 }
 
 section.gbr-kanan img {
   width: 50vw;
   border-radius: 20px;
   margin-left: 10px;
-  box-shadow: 4px 3px 10px 5px #55b5fe;
+  box-shadow: 0px 0px 10px 2px #55b5fe;
 }
 
 section.info-daftar {
@@ -147,8 +167,36 @@ section.program {
   margin-top: 1.5em;
 }
 
-section.program p {
+div.col-akre {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+div.col-akre-kiri {
+  flex-basis: 50%;
   text-align: center;
+}
+
+div.col-akre-kiri h3 {
+  font-size: 3em;
+}
+
+div.col-akre-kanan {
+  flex-basis: 50%;
+  text-align: center;
+}
+
+div.col-akre-kanan img {
+  height: 500px;
+  box-shadow: 0 1px 5px 1px;
+  border-radius: 20px;
+}
+
+section.program p {
+  text-align: justify;
+  line-height: 1.6;
+  text-indent: 50px;
 }
 
 section.program div.img-container {
@@ -171,6 +219,10 @@ section.pertanyaan h2 {
   text-align: center;
 }
 
+section.pertanyaan details {
+  margin: 5px;
+}
+
 section.contactus {
   display: flex;
   flex-direction: column;
@@ -179,23 +231,49 @@ section.contactus {
   margin-top: 2em;
 }
 
-section.contactus i {
+section.contactus i.fa-map-location-dot {
   font-size: 1.5em;
   margin: 5px;
-  color: #54affd;
+  color: #3aac2b;
+}
+
+section.contactus i.fa-square-whatsapp {
+  font-size: 1.5em;
+  margin: 5px;
+  color: #fcd343;
+}
+
+section.contactus i.fa-envelope {
+  font-size: 1.5em;
+  margin: 5px;
+  color: #55b5fe;
 }
 
 details p {
   text-align: center;
 }
 
+details p a {
+  text-decoration: none;
+  font-weight: 800;
+  opacity: 0.8;
+}
+
 @media (max-width: 767px) {
+  main {
+    margin: 10px 15px;
+  }
+
   section.sticky a button {
     font-size: 0.75rem;
   }
 
   h1.fnt-hero {
     font-size: 3.5em;
+  }
+
+  h3.fnt-hero {
+    font-size: 2.5em;
   }
 
   h4.fnt-hero {
@@ -219,6 +297,18 @@ details p {
     width: 90vw;
     margin-top: 2em;
     text-align: center;
+  }
+
+  div.col-akre-kiri h3 {
+    font-size: 1.25em;
+  }
+
+  div.col-akre-kanan img {
+    height: 300px;
+  }
+
+  section.program p {
+    text-indent: 30px;
   }
 
   details {
